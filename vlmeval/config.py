@@ -405,6 +405,18 @@ api_models = {
         temperature=0,
         retry=10,
     ),
+    "qwen2.5": partial(
+        LMDeployAPI,
+        api_base="http://0.0.0.0:23333/v1/chat/completions",
+        temperature=0,
+        retry=10,
+    ),
+    "qwen2.5_mo_0507": partial(
+        LMDeployAPI,
+        api_base="http://0.0.0.0:23333/v1/chat/completions",
+        temperature=0,
+        retry=10,
+    ),
     "lmdeploy_internvl_78B_MPO": partial(
         LMDeployAPI,
         api_base="http://0.0.0.0:23333/v1/chat/completions",

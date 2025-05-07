@@ -14,6 +14,9 @@ from .image_vqa import (
     CustomVQADataset, CRPE, MathVerse, OlympiadBench, QSpatial, VizWiz, MMNIAH, LogicVista, MME_CoT,
     MMSci_Captioning, Physics_yale, TDBenchGrounding
 )
+from .image_mo_mcq import TourMCQ
+from .image_mo_yorn import TourYN
+from .text_yue_arc import TextYueARCDataset
 
 from .image_ccocr import CCOCRDataset
 from .image_shortqa import ImageShortQADataset, PathVQA_VAL, PathVQA_TEST
@@ -160,7 +163,7 @@ IMAGE_DATASET = [
     VLM2Bench, VMCBenchDataset, EMMADataset, MME_CoT, MOAT, MedXpertQA_MM_test,
     LEGO, MMSci_Captioning, Physics_yale, MMIFEval, Spatial457, VisuLogic, CVBench,
     CMMU_MCQ, PathVQA_VAL, PathVQA_TEST, PathMMU_VAL, PathMMU_TEST, TDBench, TDBenchGrounding,
-    MicroVQA, MicroBench, CharXiv
+    MicroVQA, MicroBench, CharXiv, TourMCQ, TourYN
 ]
 
 
@@ -175,7 +178,7 @@ VIDEO_DATASET = [
 ]
 
 TEXT_DATASET = [
-    TextMCQDataset
+    TextMCQDataset, TextYueARCDataset
 ]
 
 CUSTOM_DATASET = [
